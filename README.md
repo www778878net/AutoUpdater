@@ -20,16 +20,16 @@ English | [简体中文](./README.cn.md)
 
 Clone the repository to your local machine:
 
-~~~
+```
 git clone https://github.com/www778878net/AutoUpdater.git
 cd AutoUpdater
-~~~
+```
 
 ### Quick Start
 
 Here's a basic example of how to use `AutoUpdater`:
 
-~~~python
+```python
 from autoupdater import AutoUpdater, initialize_directory
 
 # Initialize local directory
@@ -42,7 +42,7 @@ print(result)
 updater = AutoUpdater(local_dir, remote_url)
 update_result = updater.update_files()
 print(update_result)
-~~~
+```
 
 ### Main Methods
 
@@ -53,32 +53,32 @@ print(update_result)
 
 ### Example: Initializing Directory
 
-~~~python
+```python
 from autoupdater import initialize_directory
 
 local_dir = "/path/to/local/directory"
 remote_url = "http://example.com/remote/"
 result = initialize_directory(local_dir, remote_url)
 print(result)
-~~~
+```
 
 ### Example: Updating Files
 
-~~~python
+```python
 from autoupdater import AutoUpdater
 
 updater = AutoUpdater("/path/to/local/directory", "http://example.com/remote/")
 result = updater.update_files()
 print(result)
-~~~
+```
 
 ### Running Tests
 
 To run tests, execute the following command in the project root directory:
 
-~~~
+```
 python -m unittest discover tests
-~~~
+```
 
 ### Other
 

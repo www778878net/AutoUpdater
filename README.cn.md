@@ -20,16 +20,16 @@
 
 克隆仓库到本地：
 
-~~~
+```
 git clone https://github.com/www778878net/AutoUpdater.git
 cd AutoUpdater
-~~~
+```
 
 ### 快速开始
 
 以下是如何使用 `AutoUpdater` 的基本示例：
 
-~~~python
+```python
 from autoupdater import AutoUpdater, initialize_directory
 
 # 初始化本地目录
@@ -42,7 +42,7 @@ print(result)
 updater = AutoUpdater(local_dir, remote_url)
 update_result = updater.update_files()
 print(update_result)
-~~~
+```
 
 ### 主要方法
 
@@ -53,32 +53,32 @@ print(update_result)
 
 ### 示例：初始化目录
 
-~~~python
+```python
 from autoupdater import initialize_directory
 
 local_dir = "/path/to/local/directory"
 remote_url = "http://example.com/remote/"
 result = initialize_directory(local_dir, remote_url)
 print(result)
-~~~
+```
 
 ### 示例：更新文件
 
-~~~python
+```python
 from autoupdater import AutoUpdater
 
 updater = AutoUpdater("/path/to/local/directory", "http://example.com/remote/")
 result = updater.update_files()
 print(result)
-~~~
+```
 
 ### 运行测试
 
 要运行测试，请在项目根目录下执行以下命令：
 
-~~~
+```
 python -m unittest discover tests
-~~~
+```
 
 ### 其他
 
