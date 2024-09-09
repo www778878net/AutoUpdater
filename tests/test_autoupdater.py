@@ -7,7 +7,7 @@ import json
 # 添加父目录到 Python 路径，以便能够导入 AutoUpdater
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))))
 
-from src.autoupdater.autoupdater import AutoUpdater
+from autoupdater import AutoUpdater
 
 class TestAutoUpdater(unittest.TestCase):
     def setUp(self):
